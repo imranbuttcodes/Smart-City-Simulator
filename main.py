@@ -40,6 +40,7 @@ def main():
     print(light)           # Red
     light.change_state()
     print(light)           # Green
+    
 
    
 main()
