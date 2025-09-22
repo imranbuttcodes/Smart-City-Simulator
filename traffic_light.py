@@ -6,8 +6,13 @@ class Traffic:
     def change_state(self):
         if self.idx == 2:
             self.idx = 0
-        self.idx += 1
+        else :
+            self.idx += 1
         
     def __str__(self):
         return f"Current State: {self.states[self.idx]}"
 
+t = Traffic("main road")
+for i in range(10):
+    print(t)
+    t.change_state()
