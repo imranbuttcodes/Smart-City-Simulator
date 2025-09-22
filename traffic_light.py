@@ -13,8 +13,3 @@ class Traffic:
     def __str__(self):
         return f"Current State: {self.states[self.idx]}"
 
-
-t = Traffic("main road")
-for i in range(10):
-    print(t)
-    t.change_state()
