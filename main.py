@@ -1,13 +1,13 @@
-#this is the base Building class
+# this is the base Building class
 from building import Building
 from traffic_light import Traffic
 from citizen import Citizen
 from city1 import City
 from vahical import Vahical
 
-            
+
 def main():
- # Create city
+    # Create city
     city = City("Smartville")
 
     # Add buildings
@@ -29,18 +29,17 @@ def main():
     city.add_entity(v2)
 
     # Simulation
-    c1.go_to_work(v1)      # Ali drives car
-    c2.go_to_work(v2)      # Sara takes bus
-    print(len(c1))         # Age of citizen
-    print(v1 - 20)         # Fuel reduced
-    print(v1 + v2)         # Carpooling
+    c1.go_to_work(v1)  # Ali drives car
+    c2.go_to_work(v2)  # Sara takes bus
+    print(len(c1))  # Age of citizen
+    print(v1 - 20)  # Fuel reduced
+    print(v1 + v2)  # Carpooling
 
     # Traffic light
     light = Traffic("Main Road")
-    print(light)           # Red
+    print(light)  # Red
     light.change_state()
-    print(light)           # Green
-    
+    print(light)  # Green
 
-   
+
 main()
